@@ -182,6 +182,15 @@ main {
     cursor: pointer;
 }
 
+.album-pic {
+    position: relative;
+
+}
+
+.album-pic img:hover {
+    opacity: 0.5;
+}
+
 .albums {
     padding: 20px;
 }
@@ -318,6 +327,10 @@ footer > div {
 
 .center img {
     margin-right: 20px;
+}
+
+.center img:hover {
+    cursor: pointer;
 }
 
 .play {
