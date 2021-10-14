@@ -12,8 +12,7 @@ body {
 
 .top-nav > li,
 .albums > p,
-.top-row div p,
-.playlist {                           /* grey font color*/
+.top-row div p {                           /* grey font color*/
     color: grey;
 }
 
@@ -36,8 +35,10 @@ header {
 
 .upgrade-button {
     /* border: greenyellow dotted 1px; */
-    margin: 15px;
+    width: 150px;
+    height: 100%;
     display: grid;
+    place-items: center;
 }
 
 .logo {
@@ -53,11 +54,18 @@ header {
 }
 
 header div button {
-    padding: 10px;
     background-color: rgba(20, 20, 20, 0.932);
     color: white;
     border: rgba(255, 255, 255, 0.363) solid 2px;
     border-radius: 50px;
+    width: 140px;
+    height: 50px;
+}
+
+header div button:hover {
+    width: 142px;
+    height: 52px;
+    font-size: 0.86rem;
 }
 
 main {
@@ -76,6 +84,7 @@ main {
     top: 80px;
     display: grid;
     grid-template-rows: 1fr 5fr 1fr;
+    overflow-y: scroll;
 
 }
 
@@ -141,14 +150,20 @@ main {
 }
 
 .playlists div p {
-    padding-top: 3px;
-    margin-top: 10px;
+    padding-top: 5px;
+    margin-top: 12px;
     margin-bottom: 20px;
 }
 
 .playlist {
     margin-bottom: 15px;
     font-size: 0.9rem;
+    color: grey;
+}
+
+.playlist:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .top-nav {
@@ -160,6 +175,11 @@ main {
     margin-right: 20px;
     text-transform: uppercase;
     font-size: 0.8rem;
+}
+
+.top-nav > li:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .albums {
@@ -242,7 +262,7 @@ footer > div {
 
 .song p  {
     line-height: 0.9rem;
-    padding-left: 60px;
+    padding-left: 65px;
 }
 
 .sinister {
@@ -264,9 +284,16 @@ footer > div {
 .hearts {
     display: flex;
     justify-content: space-evenly;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .heart {
+    opacity: 0.3;
+}
+
+.heart:hover {
+    opacity: 1;
 }
 
 .right-bar {
@@ -275,7 +302,14 @@ footer > div {
 }
 
 .right-bar img {
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    opacity: 0.3;
+}
+
+.right-bar img:hover {
+    opacity: 1;
 }
 
 .center {
