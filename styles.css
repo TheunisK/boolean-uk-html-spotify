@@ -187,8 +187,48 @@ main {
 
 }
 
+/* .album-pic img {
+    backface-visibility: hidden;
+} */
+
 .album-pic img:hover {
     opacity: 0.5;
+}
+
+.middle {
+    position: absolute;
+    top: 30.6%;
+    left: 44.5%;
+    opacity: 0;
+}
+
+.middle2 {
+    position: absolute;
+    top: 38.6%;
+    left: 44.5%;
+    opacity: 0;
+}
+
+.middle3 {
+    position: absolute;
+    top: 39.6%;
+    left: 43%;
+    opacity: 0;
+}
+
+.middle:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.middle2:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.middle3:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .albums {
@@ -197,11 +237,13 @@ main {
 
 .albums > h2 {
     margin-top: 30px;
+    margin-left: 20px;
 }
 
 .albums > p {
     margin-top: 10px;
     font-size: 0.7rem;
+    margin-left: 20px;
 }
 
 .top-row {
@@ -209,6 +251,7 @@ main {
     grid-template-columns: repeat(6, 250px);
     gap: 20px;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .top-row > div {
@@ -227,20 +270,27 @@ main {
     margin-top: 15px;
     text-align: center;
     font-size: 0.7rem;
+    
 }
 
 .second-row {
     display: grid;
-    grid-template-columns: repeat(6, 250px);
+    grid-template-columns: repeat(2, 250px);
     gap: 20px;
     margin-top: 30px;
+    margin-left: 20px;
+}
+
+.second-row p {
+    margin-left: 20px;
 }
 
 .third-row {
     display: grid;
-    grid-template-columns: repeat(6, 250px);
+    grid-template-columns: repeat(2, 250px);
     gap: 20px;
     margin-top: 30px;
+    margin-left: 20px;
 }
 
 .third-row div img  {
